@@ -332,8 +332,18 @@ $(window).on('beforeunload', function() {
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   </body>
-  {% render ‘pick-an-option’ %}
+  {% render pick-an-option %}
 </html>
 
 
 
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% render ‘pick-an-option’ %}"
+  to: "{% render pick-an-option %}"
+  position: 18970..18997
+{% endcomment %}
